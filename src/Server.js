@@ -1,8 +1,8 @@
 import { createServer } from "miragejs"
 
 let blogs = [
-  { id: 1, title: "My First Blog", body: "Some yoga poses may lead to injuries if not implemented properly. There have been reports of knee and back injuries due to badly performed poses such as the pigeon pose leading to knee pain.", author: "John" },
-  { id: 2, title: "My Second Blog", body: "Yoga is the best medicine for any anxiety issue. Doctors are urging their patient to try out this form of excercise as it has proven benefits.", author: "Nancy" },
+  { id: 1, title: "Yoga and Injuries", body: "Some yoga poses may lead to injuries if not implemented properly. There have been reports of knee and back injuries due to badly performed poses such as the pigeon pose leading to knee pain.", author: "John" },
+  // { id: 2, title: "My Second Blog", body: "Yoga is the best medicine for any anxiety issue. Doctors are urging their patient to try out this form of excercise as it has proven benefits.", author: "Nancy" },
 ]
 
 createServer({

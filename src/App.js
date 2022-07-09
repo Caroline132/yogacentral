@@ -11,7 +11,7 @@ import Confirmation from './Confirmation';
 
 function App() {
   return (
-    <Router basename="/yogacentral">
+    <Router basename="/yogacentral2">
       <div className="App">
         <Navigationbar />
         <div className="content">
