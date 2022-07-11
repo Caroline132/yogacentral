@@ -28,8 +28,22 @@ const Blog = () => {
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
     const history = useHistory();
+
+    const [validated, setValidated] = useState(false);
+
+    const handleSubmit = (event) => {
+        const form = event.currentTarget;
+        event.preventDefault();
+        if (form.checkValidity() === false) {
+            event.stopPropagation();
+        }
+        else{
+            submit();
+        }
+        setValidated(true);
+    }
   
-    const handleSubmit = async () => {
+    const submit = async () => {
       const blog = { title, body, author };
   
       const res = await fetch('/api/blogs', {
@@ -52,7 +66,7 @@ const Blog = () => {
                 <div className="col px-5">
                     <table className="table mb-3 mt-3">
                         <thead>
-                        <h3 class="">{t("recommended")}</h3>
+                        <h3 className="post-title">{t("recommended")}</h3>
                         </thead>
                         <tbody className="justify-content-center align-items-center">
                             <Container className = "px-5">
@@ -66,14 +80,14 @@ const Blog = () => {
                                     />          
                                 </Col>
                                 <Col lg={10} className="text-start">
-                                    <div class="post-preview">
+                                    <div className="post-preview">
                                         <a onClick={() => setOpen(!open)}
                                         aria-controls="example-collapse-text"
                                         aria-expanded={open} >
-                                            <h2 class="post-title">Are fries the next superfood?</h2>
-                                            <h3 class="post-subtitle">Everyone loves fries, but most people assume that they are bad for you. But wait! They might be healthier than you thought.</h3>
+                                            <h2 className="post-title">Are fries the next superfood?</h2>
+                                            <h3 className="post-subtitle">Everyone loves fries, but most people assume that they are bad for you. But wait! They might be healthier than you thought.</h3>
                                         </a>
-                                        <p class="post-meta">
+                                        <p className="post-meta">
                                         {t("postedBy")} Chris
                                         </p>
                                     </div>
@@ -94,14 +108,14 @@ const Blog = () => {
                                     />          
                                 </Col>
                                 <Col lg={10} className="text-start">
-                                    <div class="post-preview">
+                                    <div className="post-preview">
                                         <a onClick={() => setOpen2(!open2)}
                                         aria-controls="example-collapse-text"
                                         aria-expanded={open2} >
-                                            <h2 class="post-title">You can lose weight by texting!</h2>
-                                            <h3 class="post-subtitle">Have you tried different excercises but you just don't like it? There might be an easy solution to your quest to get in shape.</h3>
+                                            <h2 className="post-title">You can lose weight by texting!</h2>
+                                            <h3 className="post-subtitle">Have you tried different excercises but you just don't like it? There might be an easy solution to your quest to get in shape.</h3>
                                         </a>
-                                        <p class="post-meta">
+                                        <p className="post-meta">
                                         {t("postedBy")} Helen
                                         </p>
                                     </div>
@@ -123,7 +137,7 @@ const Blog = () => {
                             <thead>
                             <Row>
                             <Col md="auto">
-                            <h3 class="">{t("myBlogs")}</h3>
+                            <h3 className="">{t("myBlogs")}</h3>
                             </Col>
                             <Col md="auto">
                             <Container type="submit" className = "">
@@ -134,30 +148,40 @@ const Blog = () => {
                             <Modal show={show} onHide={handleClose}>
                                 <Container className = "results-container p-5 pt-4">
                                 <div className="form-title text-md-start">{t("addBlog")}</div>
-                                <Form className="form">
+                                <Form className="form" noValidate validated={validated} onSubmit={handleSubmit}>
                                     <Row>
                                         <Col>
                                             <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
                                                 <Form.Label className="align-items-start">{t("title")}</Form.Label>
-                                                <Form.Control type="name" placeholder={t("title")} value={title} onChange={(e) => setTitle(e.target.value)}/>
+                                                <Form.Control type="name" placeholder={t("title")} value={title} onChange={(e) => setTitle(e.target.value)} required/>
+                                                <Form.Control.Feedback type="invalid">
+                                                {t("blogTitleError")}
+                                                </Form.Control.Feedback>
                                             </Form.Group>
                                         </Col>
                                         <Col>
                                             <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
                                                 <Form.Label className="align-items-start">{t("author")}</Form.Label>
-                                                <Form.Control type="author" placeholder={t("author")} value={author} onChange={(e) => setAuthor(e.target.value)}/>
+                                                <Form.Control type="author" placeholder={t("author")} value={author} onChange={(e) => setAuthor(e.target.value)} required/>
+                                                <Form.Control.Feedback type="invalid">
+                                                {t("blogAuthorError")}
+                                                </Form.Control.Feedback>
                                             </Form.Group>
                                         </Col>
                                     </Row>
                                     <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
                                         <Form.Label>{t("content")}</Form.Label>
-                                        <Form.Control type="body" placeholder={t("startWrite")} value={body} onChange={(e) => setBody(e.target.value)} as="textarea" rows={3} />
+                                        <Form.Control type="body" placeholder={t("startWrite")} value={body} onChange={(e) => setBody(e.target.value)} as="textarea" rows={3} required/>
+                                        <Form.Control.Feedback type="invalid">
+                                        {t("blogContentError")}
+                                        </Form.Control.Feedback>
                                     </Form.Group>
-                                    <Container type="submit" className = "blog-results-inner pt-2">
-                                        <div className="blog-overlap-group blog-rectangle">
-                                            <div className="blog-add text-center" onClick={handleSubmit}>{t("submit")}</div>
-                                        </div>
+                                    <Container className = "text-center">
+                                    <Button className = "text-center results-button mt-4" type="submit">{t("submit")}</Button>
                                     </Container>
+                                    {/* <Container className = "blog-results-inner pt-2">
+                                        <Button className = "text-center results-button mt-4" onClick={handleSubmit}>{t("goback")}</Button>
+                                    </Container> */}
                                 </Form>
                                 </Container>
                             </Modal>
@@ -170,10 +194,10 @@ const Blog = () => {
                                     <Container className = "">
                                     <Row className="">
                                         <Col md="auto" className="text-start">
-                                            <div class="post-preview-2">
-                                                <h2 class="post-title-2">{title}</h2>
-                                                <h3 class="post-subtitle-2">{body}</h3>
-                                                <p class="post-meta-2">
+                                            <div className="post-preview-2">
+                                                <h2 className="post-title-2">{title}</h2>
+                                                <h3 className="post-subtitle-2">{body}</h3>
+                                                <p className="post-meta-2">
                                                 {t("postedBy")} {author}
                                                 </p>
                                             </div>
