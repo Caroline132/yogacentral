@@ -56,7 +56,7 @@ const resources = {
       a3_2:"The yoga sessions are 30 minutes long and you select the format. You can select a nice flow (to relax, energize, stretch, etc.) or you can get help on certain postures.",
       a3_3:"The meditation sessions are 15 minutes long and the instructor will guide you through a meditation practice. You can mention to your instructor the type of meditation you prefer.",
       q4:"Do I need to pay for the registered classes?",
-      a4:"Our classes are 100% free! We aim to provide free yogo and meditation classes to individuals. We believe that there's a great need for such services and offering them for free is crucial for them to be accessible for all.",
+      a4:"The classes are 100% free! YogaCentral aims to provide free yogo and meditation classes to individuals. There's a great need for such services and offering them for free is crucial for them to be accessible for all.",
       confirmTitle:"Registration confirmed!",
       confirmPara:"We’ll get in touch shortly.",
       ok:"OK",

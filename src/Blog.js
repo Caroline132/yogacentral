@@ -179,9 +179,6 @@ const Blog = () => {
                                     <Container className = "text-center">
                                     <Button className = "text-center results-button mt-4" type="submit">{t("submit")}</Button>
                                     </Container>
-                                    {/* <Container className = "blog-results-inner pt-2">
-                                        <Button className = "text-center results-button mt-4" onClick={handleSubmit}>{t("goback")}</Button>
-                                    </Container> */}
                                 </Form>
                                 </Container>
                             </Modal>

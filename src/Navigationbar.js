@@ -1,5 +1,4 @@
 import logo from './img/YogaCentral.svg';
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import { useHistory, useParams } from "react-router-dom";

@@ -4,7 +4,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { useHistory, Link } from "react-router-dom";
 import {useEffect, useState } from 'react';
 import RangeSlider from 'react-bootstrap-range-slider';
-import 'bootstrap/dist/css/bootstrap.css'; // or include from a CDN
+import 'bootstrap/dist/css/bootstrap.css'; 
 import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';
 import { useTranslation } from "react-i18next";
 

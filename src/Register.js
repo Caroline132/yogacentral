@@ -45,7 +45,7 @@ function Register() {
                                     </Form.Control.Feedback>
                                 </Form.Group>
                                 <Form.Group className="form-group-2 mb-3 py-2" controlId="formBasicEmail2">
-                                    <Form.Control type="text" placeholder={t("emailPH")} pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required/>
+                                    <Form.Control type="text" placeholder={t("emailPH")} pattern="[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$" required/>
                                     <Form.Control.Feedback type="invalid">
                                     {t("registerEmailError")}
                                     </Form.Control.Feedback>
