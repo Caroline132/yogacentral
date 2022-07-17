@@ -1,7 +1,11 @@
 import child from './img/child.svg';
-import catCow from './img/catCow.svg';
+import cat from './img/cat.svg';
+import cow from './img/cow.svg';
 import downDog from './img/downDog.svg';
 import forwardChair from './img/forwardChair.svg';
+import forward from './img/forward.svg';
+import halfway from './img/halfway.svg';
+import chair from './img/chair.svg';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
 import { useHistory, Link } from "react-router-dom";
@@ -27,23 +31,26 @@ function Results() {
                     <Container className = "results-inner align-items-center mt-3 p-3">
                         <div className="list pb-2">
                         <p className="results-sequence">{t("pose1")}</p>
-                        <div className="rectangle-11"></div>
                         <img className="pose" src={child} />
                         </div>
                         <div className="list p-2">
                         <p className="results-sequence">{t("pose2")}</p>
-                        <div className="rectangle-11"></div>
-                        <img className="pose" src={catCow} />
+                        <div className="d-md-flex align-items-end justify-content-center">
+                        <img className="pose" src={cat} />
+                        <img className="pose" src={cow} />
+                        </div>
                         </div>
                         <div className="list p-2">
                         <p className="results-sequence">{t("pose3")}</p>
-                        <div className="rectangle-11"></div>
                         <img className="pose" src={downDog} />
                         </div>
                         <div className="list-2 pt-2">
                         <p className="results-sequence">{t("pose4")}</p>
-                        <div className="rectangle-11"></div>
-                        <img className="pose-2" src={forwardChair} />
+                        <div className="d-md-flex align-items-end justify-content-center">
+                        <img className="pose" src={forward} />
+                        <img className="pose" src={halfway} />
+                        <img className="pose" src={chair} />
+                        </div>
                         </div>
                     </Container>
                 </Col>

@@ -6,7 +6,10 @@ const FAQ = () => {
     const { t } = useTranslation();
     return ( 
         <div className="faq">
-            <Row className="justify-content-center pt-5">
+            <Row className="justify-content-center pt-5 px-3">
+                <div class="text-center py-3">
+                    <h3 className="post-title">{t("FAQ")}</h3>
+                </div>
                 <Accordion className= "justify-content-center col-12 col-sm-10 col-lg-8" defaultActiveKey="0">
                     <Accordion.Item eventKey="0">
                         <Accordion.Header>{t("q1")}</Accordion.Header>

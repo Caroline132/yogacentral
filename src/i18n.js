@@ -16,7 +16,7 @@ const resources = {
       buildTitle:"Build Your Own Yoga Sequence",
       buildPara:"Fill out the questionnaire below and we’ll create a tailored yoga sequence just for you!",
       difficulty:"Difficulty",
-      length:"Length",
+      length:"Length (minutes)",
       goal:"Goal",
       buildButton:"Build Sequence",
       easy:"Easy",
@@ -70,7 +70,8 @@ const resources = {
       myBlogs:"My Blogs",
       recommended:"Recommended",
       noBlogs:"No blogs",
-      delete:"Delete"
+      delete:"Delete",
+      FAQ:"Frequently Asked Questions"
     },
   },
   fr: {
@@ -85,7 +86,7 @@ const resources = {
         buildTitle:"Créez votre propre séquence de yoga",
         buildPara:"Remplissez le questionnaire ci-dessous et nous créerons une séquence de yoga sur mesure rien que pour vous !",
         difficulty:"Difficulté",
-        length:"Longueur",
+        length:"Longueur (minutes)",
         goal:"Objectif",
         buildButton:"Créez votre Séquence",
         easy:"Facile",
@@ -136,7 +137,8 @@ const resources = {
         myBlogs:"Mes blogs",
         recommended:"Recommandé",
         noBlogs:"Aucun blog",
-        delete:"Effacer"
+        delete:"Effacer",
+        FAQ:"Questions fréquemment posées"
     },
   },
 };
