@@ -24,12 +24,22 @@ const Blog = () => {
             .catch(err => console.log(err))
     },[])
 
+    const [blogId, setBlogId] = useState(null)
     const [title, setTitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
     const history = useHistory();
 
     const [validated, setValidated] = useState(false);
+
+    const deleteBlog= async (id) => {
+        try {
+          await fetch(`/api/blogs/${id}`, { method: 'DELETE' })
+          setBlogs(blogs.filter((m) => m.id !== id))
+        } catch (err) {
+          console.log(err)
+        }
+    }
 
     const handleSubmit = (event) => {
         const form = event.currentTarget;
@@ -131,73 +141,81 @@ const Blog = () => {
                             </Container>
                         </tbody>
                     </table>
-                    {blogs?.length > 0 ? (
-                        
-                        <table className="table">
-                            <thead>
-                            <Row>
-                            <Col md="auto">
-                            <h3 className="">{t("myBlogs")}</h3>
-                            </Col>
-                            <Col md="auto">
-                            <Container type="submit" className = "">
-                                <div className="blog-pop-overlap-group blog-pop-rectangle">
-                                    <div className="blog-pop-add text-center" onClick={handleShow}><BsPencilSquare /> {t("addBlog")}</div>
-                                </div>
-                            </Container>
-                            <Modal show={show} onHide={handleClose}>
-                                <Container className = "results-container p-5 pt-4">
-                                <div className="form-title text-md-start">{t("addBlog")}</div>
-                                <Form className="form" noValidate validated={validated} onSubmit={handleSubmit}>
-                                    <Row>
-                                        <Col>
-                                            <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
-                                                <Form.Label className="align-items-start">{t("title")}</Form.Label>
-                                                <Form.Control type="name" placeholder={t("title")} value={title} onChange={(e) => setTitle(e.target.value)} required/>
-                                                <Form.Control.Feedback type="invalid">
-                                                {t("blogTitleError")}
-                                                </Form.Control.Feedback>
-                                            </Form.Group>
-                                        </Col>
-                                        <Col>
-                                            <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
-                                                <Form.Label className="align-items-start">{t("author")}</Form.Label>
-                                                <Form.Control type="author" placeholder={t("author")} value={author} onChange={(e) => setAuthor(e.target.value)} required/>
-                                                <Form.Control.Feedback type="invalid">
-                                                {t("blogAuthorError")}
-                                                </Form.Control.Feedback>
-                                            </Form.Group>
-                                        </Col>
-                                    </Row>
-                                    <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
-                                        <Form.Label>{t("content")}</Form.Label>
-                                        <Form.Control type="body" placeholder={t("startWrite")} value={body} onChange={(e) => setBody(e.target.value)} as="textarea" rows={3} required/>
-                                        <Form.Control.Feedback type="invalid">
-                                        {t("blogContentError")}
-                                        </Form.Control.Feedback>
-                                    </Form.Group>
-                                    <Container className = "text-center">
-                                    <Button className = "text-center results-button mt-4" type="submit">{t("submit")}</Button>
-                                    </Container>
-                                </Form>
+
+                    <table className="table">
+                        <thead>
+                        <Row>
+                        <Col md="auto">
+                        <h3 className="">{t("myBlogs")}</h3>
+                        </Col>
+                        <Col md="auto">
+                        <Container type="submit" className = "">
+                            <div className="blog-pop-overlap-group blog-pop-rectangle">
+                                <div className="blog-pop-add text-center" onClick={handleShow}><BsPencilSquare /> {t("addBlog")}</div>
+                            </div>
+                        </Container>
+                        <Modal show={show} onHide={handleClose}>
+                            <Container className = "results-container p-5 pt-4">
+                            <div className="form-title text-md-start">{t("addBlog")}</div>
+                            <Form className="form" noValidate validated={validated} onSubmit={handleSubmit}>
+                                <Row>
+                                    <Col>
+                                        <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
+                                            <Form.Label className="align-items-start">{t("title")}</Form.Label>
+                                            <Form.Control type="name" placeholder={t("title")} value={title} onChange={(e) => setTitle(e.target.value)} required/>
+                                            <Form.Control.Feedback type="invalid">
+                                            {t("blogTitleError")}
+                                            </Form.Control.Feedback>
+                                        </Form.Group>
+                                    </Col>
+                                    <Col>
+                                        <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
+                                            <Form.Label className="align-items-start">{t("author")}</Form.Label>
+                                            <Form.Control type="author" placeholder={t("author")} value={author} onChange={(e) => setAuthor(e.target.value)} required/>
+                                            <Form.Control.Feedback type="invalid">
+                                            {t("blogAuthorError")}
+                                            </Form.Control.Feedback>
+                                        </Form.Group>
+                                    </Col>
+                                </Row>
+                                <Form.Group className="mb-3 py-2" controlId="formBasicEmail1">
+                                    <Form.Label>{t("content")}</Form.Label>
+                                    <Form.Control type="body" placeholder={t("startWrite")} value={body} onChange={(e) => setBody(e.target.value)} as="textarea" rows={3} required/>
+                                    <Form.Control.Feedback type="invalid">
+                                    {t("blogContentError")}
+                                    </Form.Control.Feedback>
+                                </Form.Group>
+                                <Container className = "text-center">
+                                <Button className = "text-center results-button mt-4" type="submit">{t("submit")}</Button>
                                 </Container>
-                            </Modal>
-                            </Col>
-                            </Row>
-                            </thead>
+                            </Form>
+                            </Container>
+                        </Modal>
+                        </Col>
+                        </Row>
+                        </thead>
+                        <tbody className="justify-content-center align-items-center mb-0">
+                        <Container className = "px-5"></Container>
+                        </tbody>
+                    </table>
+
+                    {blogs?.length > 0 ? (
+                        <table className="table">
                             <tbody className="justify-content-center align-items-center mb-0">
-                                
                                 {blogs.map(({id, title, body, author}) => (
                                     <Container className = "">
                                     <Row className="">
-                                        <Col md="auto" className="text-start">
+                                        <Col lg={10} className="text-start">
                                             <div className="post-preview-2">
-                                                <h2 className="post-title-2">{title}</h2>
-                                                <h3 className="post-subtitle-2">{body}</h3>
-                                                <p className="post-meta-2">
+                                                <h2 id="title" contentEditable="true"  suppressContentEditableWarning={true} className="post-title-2">{title}</h2>
+                                                <h3 id="body" contentEditable="true"  suppressContentEditableWarning={true} className="post-subtitle-2">{body}</h3>
+                                                <p id="author" contentEditable="true"  suppressContentEditableWarning={true} className="post-meta-2">
                                                 {t("postedBy")} {author}
                                                 </p>
                                             </div>
+                                        </Col>
+                                        <Col className="d-flex text-center align-middle align-items-center">
+                                            <Button className="blog-delete" variant="danger" onClick={() => deleteBlog(id)}>Delete</Button>
                                         </Col>
                                     </Row>
                                     </Container>

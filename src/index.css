@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700,300,500,600|Montserrat:700,600|Petrona:400");
 
-.poppins-light-nile-blue-22px {
+/* Navigation Bar */
+.navigation-text {
   color: #223C50;
   font-family: "Poppins", Helvetica;
   font-size: 22px;
@@ -11,7 +12,6 @@
 .switcher {
   align-items: center;
   color: #223C50!important;
-  /* background-color: #223C50!important; */
   font-family: "Poppins", Helvetica;
   font-size: 22px!important;
   font-style: normal!important;
@@ -36,21 +36,7 @@
   cursor: pointer;
 }
 
-.overlap-group2-1 {
-  height:250px;
-  margin-bottom: 0px;
-  position: relative;
-  width: 445px;
-}
-
-.group-container {
-  align-items: center;
-  display: flex;
-  margin-left: 127.0px;
-  margin-top: 174px;
-  min-width: 1131px;
-}
-
+/* Home */
 .quote {
   color: #223c50;
   font-family: "Petrona", Helvetica;
@@ -332,7 +318,14 @@
   align-items: center;
 }
 
-/* blog popup */
+.blog-delete {
+  border-radius: 10px !important;
+  letter-spacing: 0 !important;
+  font-size: 16px !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+}
+
 .blog-rectangle {
   background-color: #F5AB95;
   border-radius: 17px;
@@ -362,7 +355,6 @@
   cursor: pointer;
 }
 
-
 .blog-add {
   letter-spacing: 0;
   position: absolute;
@@ -374,7 +366,7 @@
   font-weight: 700;
   align-items: center;
 }
-/* Blogs */
+
 .post-preview > a {
   color: #212529;
 }

@@ -44,11 +44,11 @@ function Navigationbar() {
           <Navbar.Toggle />
           <Navbar.Collapse className="justify-content-end">
             <Nav>
-              <Nav.Link onClick={handleClick} className="px-5 poppins-light-nile-blue-22px">{t("homeNav")}</Nav.Link>
-              <Nav.Link onClick={handleClick2} className="px-5 poppins-light-nile-blue-22px">{t("build")}</Nav.Link>
-              <Nav.Link onClick={handleClick3} className="px-5 poppins-light-nile-blue-22px">{t("blog")}</Nav.Link>
-              <Nav.Link onClick={handleClick4} className="px-5 poppins-light-nile-blue-22px">{t("register")}</Nav.Link>
-              <Nav.Link onClick={handleClick5} className="px-5 poppins-light-nile-blue-22px">{t("faq")}</Nav.Link>
+              <Nav.Link onClick={handleClick} className="px-5 navigation-text">{t("homeNav")}</Nav.Link>
+              <Nav.Link onClick={handleClick2} className="px-5 navigation-text">{t("build")}</Nav.Link>
+              <Nav.Link onClick={handleClick3} className="px-5 navigation-text">{t("blog")}</Nav.Link>
+              <Nav.Link onClick={handleClick4} className="px-5 navigation-text">{t("register")}</Nav.Link>
+              <Nav.Link onClick={handleClick5} className="px-5 navigation-text">{t("faq")}</Nav.Link>
               <LanguageSwitcher />
             </Nav>
           </Navbar.Collapse>
