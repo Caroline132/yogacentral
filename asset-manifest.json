@@ -1,25 +1,29 @@
 {
   "files": {
     "main.css": "/yogacentral2/static/css/main.9335ed12.css",
-    "main.js": "/yogacentral2/static/js/main.47d2a074.js",
+    "main.js": "/yogacentral2/static/js/main.a34598f1.js",
     "static/js/787.41c4c449.chunk.js": "/yogacentral2/static/js/787.41c4c449.chunk.js",
     "static/media/fries2.svg": "/yogacentral2/static/media/fries2.963c61aa4a57d5c7f9a58ecc38e18f8d.svg",
     "static/media/confirmationImage.svg": "/yogacentral2/static/media/confirmationImage.ca47da799d4a205c13a5dcccf06de9a1.svg",
     "static/media/registerImage.svg": "/yogacentral2/static/media/registerImage.a9b987ce7e12fe8236dd8b573a8b1408.svg",
     "static/media/forwardChair.svg": "/yogacentral2/static/media/forwardChair.f6983750bb5e98d98c7c9aaa8c371a55.svg",
-    "static/media/catCow.svg": "/yogacentral2/static/media/catCow.58d845b22100f5d89c08da3d53cc27ab.svg",
     "static/media/text3.png": "/yogacentral2/static/media/text3.7f207e2b3894a269336b.png",
     "static/media/child.svg": "/yogacentral2/static/media/child.825705b707103f5c06f6ea18d5b0dd7e.svg",
     "static/media/downDog.svg": "/yogacentral2/static/media/downDog.e2c45c8bc18300c8c3cfdf0eaa08e0b0.svg",
+    "static/media/cow.svg": "/yogacentral2/static/media/cow.a302529ef6a5b73f4d399ae9beb285ca.svg",
+    "static/media/cat.svg": "/yogacentral2/static/media/cat.358edaed7a1a196db0abccc824a54547.svg",
     "static/media/landing.svg": "/yogacentral2/static/media/landing.fada9972f45a1532d5ab0819d139eff3.svg",
+    "static/media/chair.svg": "/yogacentral2/static/media/chair.1d9d7179b610a86656a752ab099bb6f0.svg",
+    "static/media/halfway.svg": "/yogacentral2/static/media/halfway.74261165a7ba6add448c59a83971380c.svg",
+    "static/media/forward.svg": "/yogacentral2/static/media/forward.512889973393b2dd3cad52692dd2e803.svg",
     "static/media/YogaCentral.svg": "/yogacentral2/static/media/YogaCentral.1263370bbf29ec4d558fe9daff76a33d.svg",
     "index.html": "/yogacentral2/index.html",
     "main.9335ed12.css.map": "/yogacentral2/static/css/main.9335ed12.css.map",
-    "main.47d2a074.js.map": "/yogacentral2/static/js/main.47d2a074.js.map",
+    "main.a34598f1.js.map": "/yogacentral2/static/js/main.a34598f1.js.map",
     "787.41c4c449.chunk.js.map": "/yogacentral2/static/js/787.41c4c449.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9335ed12.css",
-    "static/js/main.47d2a074.js"
+    "static/js/main.a34598f1.js"
   ]
 }
