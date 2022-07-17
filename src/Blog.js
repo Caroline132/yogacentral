@@ -215,7 +215,7 @@ const Blog = () => {
                                             </div>
                                         </Col>
                                         <Col className="d-flex text-center align-middle align-items-center">
-                                            <Button className="blog-delete" variant="danger" onClick={() => deleteBlog(id)}>Delete</Button>
+                                            <Button className="blog-delete" variant="danger" onClick={() => deleteBlog(id)}>{t("delete")} </Button>
                                         </Col>
                                     </Row>
                                     </Container>
@@ -223,7 +223,7 @@ const Blog = () => {
                             </tbody>
                         </table>
                     ) : (
-                        <p>No Blogs</p>
+                        <p>{t("noBlogs")} </p>
                     )}
                 </div>
             </div>

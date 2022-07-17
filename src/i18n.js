@@ -60,7 +60,7 @@ const resources = {
       confirmTitle:"Registration confirmed!",
       confirmPara:"We’ll get in touch shortly.",
       ok:"OK",
-      resultsTitle:"Here's your 5-minute yoga sequence",
+      resultsTitle:"Here's your customized yoga sequence",
       pose1:"1.  Child’s Pose (1 minute)",
       pose2:"2. Cat-Cow (1 minute)",
       pose3:"3. Downward Facing Dog (1 minute)",
@@ -68,7 +68,9 @@ const resources = {
       goback:"Go back",
       postedBy:"Posted by",
       myBlogs:"My Blogs",
-      recommended:"Recommended"
+      recommended:"Recommended",
+      noBlogs:"No blogs",
+      delete:"Delete"
     },
   },
   fr: {
@@ -124,7 +126,7 @@ const resources = {
         confirmTitle:"Inscription confirmée !",
         confirmPara:"Nous vous contacterons sous peu.",
         ok:"D'ACCORD",
-        resultsTitle:"Voici votre séquence de yoga de 5 minutes",
+        resultsTitle:"Voici votre séquence de yoga personnalisée",
         pose1:"1. Pose de l'enfant (1 minute)",
         pose2:"2. Chat-Vache (1 minute)",
         pose3:"3. Chien tête en bas (1 minute)",
@@ -132,7 +134,9 @@ const resources = {
         goback:"Retourner",
         postedBy:"Écrit par",
         myBlogs:"Mes blogs",
-        recommended:"Recommandé"
+        recommended:"Recommandé",
+        noBlogs:"Aucun blog",
+        delete:"Effacer"
     },
   },
 };
