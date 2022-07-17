@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,700,300,500,600|Montserrat:700,600|Petrona:400");
 
+*{font-family: "Poppins", Helvetica !important;}
+
 /* Navigation Bar */
 .navigation-text {
   color: #223C50;
-  font-family: "Poppins", Helvetica;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -12,7 +13,6 @@
 .switcher {
   align-items: center;
   color: #223C50!important;
-  font-family: "Poppins", Helvetica;
   font-size: 22px!important;
   font-style: normal!important;
   font-weight: 400!important;
@@ -39,9 +39,8 @@
 /* Home */
 .quote {
   color: #223c50;
-  font-family: "Petrona", Helvetica;
   font-size: 55px;
-  font-weight: 400;
+  font-weight: 100;
   left: 0;
   letter-spacing: 0;
   line-height: 55px;
@@ -59,7 +58,6 @@
   align-items: flex-end !important;
   display: flex;
   height: 58px;
-  
 }
 
 .group {
@@ -83,14 +81,12 @@
 .build-container{
   background: #D1D5AC;
   border-radius: 10px;
-  font-family: "Poppins", Helvetica;
   align-items: center;
   align-self: flex-end;
 }
 
 .form-title{
   color: #171717;
-  font-family: "Poppins", Helvetica;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -113,7 +109,6 @@
 
 .form-label{
   color: #252b42;
-  font-family: "Montserrat", Helvetica;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -143,7 +138,6 @@
 /* Results */
 .results-title{
   color: #171717;
-  font-family: "Poppins", Helvetica;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -153,7 +147,6 @@
 .results-container{
   background: #FFEEE9;
   border-radius: 10px;
-  font-family: "Poppins", Helvetica;
   align-items: center;
   align-self: flex-end;
 }
@@ -179,7 +172,6 @@
 
 .results-sequence{
   color: #252b42;
-  font-family: "Montserrat", Helvetica;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -199,7 +191,6 @@
 /* Register */
 .register-container{
   background: #D8B88E;
-  font-family: "Poppins", Helvetica;
   align-items: center;
   align-self: flex-end;
 }
@@ -262,7 +253,6 @@
 /* build section  */
 .confirmation-container{
   background: #EEF7CC;
-  font-family: "Poppins", Helvetica;
   align-items: center;
   align-self: flex-end;
 }
