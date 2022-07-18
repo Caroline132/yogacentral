@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/yogacentral2/static/css/main.3a2b5a45.css",
+    "main.css": "/yogacentral2/static/css/main.1f849758.css",
     "main.js": "/yogacentral2/static/js/main.922c94b4.js",
     "static/js/787.41c4c449.chunk.js": "/yogacentral2/static/js/787.41c4c449.chunk.js",
     "static/media/fries2.svg": "/yogacentral2/static/media/fries2.963c61aa4a57d5c7f9a58ecc38e18f8d.svg",
@@ -18,12 +18,12 @@
     "static/media/forward.svg": "/yogacentral2/static/media/forward.512889973393b2dd3cad52692dd2e803.svg",
     "static/media/YogaCentral.svg": "/yogacentral2/static/media/YogaCentral.1263370bbf29ec4d558fe9daff76a33d.svg",
     "index.html": "/yogacentral2/index.html",
-    "main.3a2b5a45.css.map": "/yogacentral2/static/css/main.3a2b5a45.css.map",
+    "main.1f849758.css.map": "/yogacentral2/static/css/main.1f849758.css.map",
     "main.922c94b4.js.map": "/yogacentral2/static/js/main.922c94b4.js.map",
     "787.41c4c449.chunk.js.map": "/yogacentral2/static/js/787.41c4c449.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3a2b5a45.css",
+    "static/css/main.1f849758.css",
     "static/js/main.922c94b4.js"
   ]
 }
