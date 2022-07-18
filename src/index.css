@@ -190,6 +190,7 @@
 
 /* Register */
 .register-container{
+  border-radius: 10px;
   background: #D8B88E;
   align-items: center;
   align-self: flex-end;
