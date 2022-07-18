@@ -1,4 +1,4 @@
-# rechargespa
+# YogaCentral
 
 Code for a website about yoga and wellbeing. Made for SEG3125 Project 2.
 
