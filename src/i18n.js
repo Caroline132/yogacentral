@@ -31,7 +31,7 @@ const resources = {
       author:"Author",
       content:"Content",
       startWrite:"Start Writing...",
-      registerTitle:"Register for a class",
+      registerTitle:"Register for a Class",
       registerPara:"We deliver personal Zoom sessions to practice your yoga and meditation skills.",
       registerNameError:"Please provide a valid name.",
       registerEmailError:"Please provide a valid email.",
