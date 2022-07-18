@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.css'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useHistory, Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import registerImage from './img/registerImage.svg';
- import { Formik } from 'formik';
- import {useEffect, useState } from 'react';
+ import { useState } from 'react';
  import { useTranslation } from "react-i18next";
 
 function Register() {

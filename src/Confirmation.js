@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useHistory, Link } from "react-router-dom";
+import { Container, Col, Button } from 'react-bootstrap';
+import { useHistory } from "react-router-dom";
 import confirmationImage from './img/confirmationImage.svg';
 import { useTranslation } from "react-i18next";
 

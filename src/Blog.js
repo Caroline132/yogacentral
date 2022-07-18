@@ -12,10 +12,13 @@ const Blog = () => {
     const [show, setShow] = useState(false);
     const [open, setOpen] = useState(false);
     const [open2, setOpen2] = useState(false);
-
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
     const [blogs, setBlogs] = useState(null);
+    const [title, setTitle] = useState('');
+    const [body, setBody] = useState('');
+    const [author, setAuthor] = useState('');
+    const [validated, setValidated] = useState(false);
 
     useEffect(() => {
         fetch('/api/blogs')
@@ -23,14 +26,6 @@ const Blog = () => {
             .then(json => setBlogs(json.blogs))
             .catch(err => console.log(err))
     },[])
-
-    const [blogId, setBlogId] = useState(null)
-    const [title, setTitle] = useState('');
-    const [body, setBody] = useState('');
-    const [author, setAuthor] = useState('');
-    const history = useHistory();
-
-    const [validated, setValidated] = useState(false);
 
     const deleteBlog= async (id) => {
         try {

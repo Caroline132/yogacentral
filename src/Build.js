@@ -1,8 +1,7 @@
-import landing from './img/landing.svg';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
-import { useHistory, Link } from "react-router-dom";
-import {useEffect, useState } from 'react';
+import { useHistory } from "react-router-dom";
+import { useState } from 'react';
 import RangeSlider from 'react-bootstrap-range-slider';
 import 'bootstrap/dist/css/bootstrap.css'; 
 import 'react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css';

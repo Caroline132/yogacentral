@@ -1,7 +1,7 @@
 import logo from './img/YogaCentral.svg';
 import 'bootstrap/dist/css/bootstrap.css'
 import { Navbar, Container, Nav } from 'react-bootstrap';
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 

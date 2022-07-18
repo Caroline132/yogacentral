@@ -1,5 +1,4 @@
-import { Accordion, Card, Row } from "react-bootstrap";
-import { Component } from "react";
+import { Accordion, Row } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 const FAQ = () => {

@@ -2,13 +2,12 @@ import child from './img/child.svg';
 import cat from './img/cat.svg';
 import cow from './img/cow.svg';
 import downDog from './img/downDog.svg';
-import forwardChair from './img/forwardChair.svg';
 import forward from './img/forward.svg';
 import halfway from './img/halfway.svg';
 import chair from './img/chair.svg';
 import 'bootstrap/dist/css/bootstrap.css'
-import { Container, Row, Col, ListGroup, Button } from 'react-bootstrap';
-import { useHistory, Link } from "react-router-dom";
+import { Container, Row, Col, Button } from 'react-bootstrap';
+import { useHistory } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 function Results() {
