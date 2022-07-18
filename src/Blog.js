@@ -90,7 +90,7 @@ const Blog = () => {
                                         aria-controls="example-collapse-text"
                                         aria-expanded={open} >
                                             <h2 className="post-title">Are fries the next superfood?</h2>
-                                            <h3 className="post-subtitle">Everyone loves fries, but most people assume that they are bad for you. But wait! They might be healthier than you thought.</h3>
+                                            <h3 className="post-subtitle">Everyone loves fries, but most people assume they are bad for you. But wait! They might be healthier than you thought.</h3>
                                         </a>
                                         <p className="post-meta">
                                         {t("postedBy")} Chris
@@ -98,7 +98,7 @@ const Blog = () => {
                                     </div>
                                     <Collapse in={open}>
                                     <div id="example-collapse-text">
-                                    A research group in Belgium have found that a daily meal of fies might be healthy as potatoes are packed with vitamins and fiber, which can aid in digestion and also provides essential nutrients.
+                                    A research group in Belgium has found that a daily meal of fries might be healthy as potatoes are packed with vitamins and fiber, aiding digestion and providing essential nutrients.
                                     </div>
                                     </Collapse>
                                 </Col>
@@ -118,7 +118,7 @@ const Blog = () => {
                                         aria-controls="example-collapse-text"
                                         aria-expanded={open2} >
                                             <h2 className="post-title">You can lose weight by texting!</h2>
-                                            <h3 className="post-subtitle">Have you tried different excercises but you just don't like it? There might be an easy solution to your quest to get in shape.</h3>
+                                            <h3 className="post-subtitle">Have you tried different exercises, but you just don't like them? There might be an easy solution to your quest to get in shape.</h3>
                                         </a>
                                         <p className="post-meta">
                                         {t("postedBy")} Helen
@@ -126,9 +126,7 @@ const Blog = () => {
                                     </div>
                                     <Collapse in={open2}>
                                     <div id="example-collapse-text">
-                                    Texting has always been assumed to be unhealthy as it provides harsh blue
-                                    light and it can lead to hand strain. However, if done for 30 minutes every 
-                                    day, you can lose up to 100 calories. So go on an continue texting!
+                                    Texting has always been considered unhealthy as it provides harsh blue light and can lead to hand strain. However, if done for 30 minutes daily, you can lose up to 100 calories. So go on and continue texting!
                                     </div>
                                     </Collapse>
                                 </Col>

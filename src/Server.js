@@ -7,7 +7,7 @@ createServer({
   seeds(server) {
     server.create('blog', {
       title: "Yoga and Injuries",
-      body: "Some yoga poses may lead to injuries if not implemented properly. There have been reports of knee and back injuries due to badly performed poses such as the pigeon pose leading to knee pain.",
+      body: "Some yoga poses may lead to injuries if not implemented properly. There have been reports of knee and back injuries due to badly performed poses, such as the pigeon pose leading to knee pain.",
       author: "John" ,
     })
   },
